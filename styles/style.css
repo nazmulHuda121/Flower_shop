@@ -1,0 +1,12 @@
+@import "tailwindcss";
+* {
+  font-family: "Noto Serif", serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+.text-p {
+  color: black;
+  opacity: 50%;
+}
