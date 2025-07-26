@@ -26,9 +26,7 @@
         <img class="w-16 xl:w-fit" src="./assets/logo.svg" alt="Main_logo" />
         <ul class="gap-4 flex items-center xl:gap-12">
           <li>
-            <a class="inter text-p hidden xl:block hover:animate-spin" href=""
-              >Home</a
-            >
+            <a class="inter text-p hidden xl:block" href="">Home</a>
           </li>
           <li><a class="inter text-p hidden xl:block" href="">Shop</a></li>
           <li><a class="inter text-p hidden xl:block" href="">About Us</a></li>
@@ -233,28 +231,49 @@
         </p>
         <div class="grid xl:grid-cols-3 gap-7 xl:mt-30 mt-12">
           <div
-            class="bg-[url('./assets/deal-bloom.png')] bg-no-repeat bg-cover grid place-items-center text-white pt-16 pb-28 rounded-xl"
+            class="bg-[url('./assets/deal-bloom.png')] bg-no-repeat bg-cover grid place-items-center text-white pt-16 pb-28 rounded-xl relative"
           >
-            <h3 class="text-xl">60% Off | Bloom Plant</h3>
-            <span><a class="underline" href="">Shop Now</a></span>
+            <div class="bg-black opacity-50 absolute inset-0 rounded-xl"></div>
+            <h3 class="text-xl z-1">60% Off | Bloom Plant</h3>
+            <span><a class="underline relative" href="">Shop Now</a></span>
           </div>
           <div
-            class="bg-[url('./assets/deal-ana.png')] bg-no-repeat bg-cover grid place-items-center text-white pt-16 pb-28 rounded-xl xl:row-start-2"
+            class="bg-[url('./assets/deal-ana.png')] bg-no-repeat bg-cover grid place-items-center text-white pt-16 pb-28 rounded-xl xl:row-start-2 relative"
           >
-            <h3 class="text-xl">60% Off | Bloom Plant</h3>
-            <span><a class="underline" href="">Shop Now</a></span>
+            <div class="absolute bg-black opacity-50 inset-0 rounded-xl"></div>
+            <h3 class="text-xl relative">60% Off | Bloom Plant</h3>
+            <span><a class="underline relative" href="">Shop Now</a></span>
           </div>
           <div
-            class="bg-[url('./assets/deal-zabo.png')] bg-no-repeat bg-cover flex flex-col items-center justify-center text-white pt-16 pb-28 rounded-xl xl:col-span-2 xl:col-start-2 xl:row-span-2"
+            class="bg-[url('./assets/deal-zabo.png')] bg-no-repeat bg-cover flex flex-col items-center justify-center text-white pt-16 pb-28 rounded-xl xl:col-span-2 xl:col-start-2 xl:row-span-2 relative"
           >
-            <h3 class="text-xl xl:text-4xl xl:font-bold mb-2.5">
+            <div class="absolute bg-black opacity-50 inset-0 rounded-xl"></div>
+            <h3 class="text-xl xl:text-4xl xl:font-bold mb-2.5 relative">
               60% Off | Bloom Plant
             </h3>
-            <span><a class="underline xl:text-3xl" href="">Shop Now</a></span>
+            <span
+              ><a class="underline xl:text-3xl relative" href=""
+                >Shop Now</a
+              ></span
+            >
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer>
+      <!-- Newsletter Section -->
+      <section
+        class="bg-[url('./assets/news-letter-bg.png')] text-center xl:pt-60 xl:pb-60 bg-cover"
+      >
+        <h2 class="text-[50px] text-white font-bold">
+          Join the colorful Bunch
+        </h2>
+        <form action="">
+          <input type="email" name="" id="" />
+          <button>Subscribe</button>
+        </form>
+      </section>
+    </footer>
   </body>
 </html>
